@@ -1,8 +1,8 @@
 :root {
   --bg: #7aa5c8;          /* azzurro carta da zucchero */
   --card-bg: #5f88aa;
-  --text: #f7e7b5;        /* oro chiaro */
-  --text-strong: #ffe08a; /* oro più intenso */
+  --text: #c9a44f;        /* oro scuro leggibile */
+  --text-strong: #e6c46a; /* oro più intenso */
   --accent: #ffe08a;
   --danger: #ffb3b3;
   --radius: 16px;
@@ -225,3 +225,4 @@ tbody tr:nth-child(even) {
     padding: 12px 10px;
   }
 }
+
