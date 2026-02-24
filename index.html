@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Registro Voti Cyber</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <h1>Registro Voti Cyber</h1>
+    <p>Materie, voti, assenze e media in un’unica pagina</p>
+  </header>
+
+  <main class="container">
+    <!-- Sezione inserimento -->
+    <section class="card">
+      <h2>Nuova materia</h2>
+
+      <div class="form-row">
+        <input type="text" id="materia" placeholder="Materia (es. Matematica)">
+        <input type="number" id="voto" placeholder="Voto" step="0.5" min="1" max="10">
+        <input type="number" id="assenze" placeholder="Ore assenza" min="0" step="1">
+      </div>
+
+      <button class="btn primary" id="btn-aggiungi">
+        Aggiungi materia
+      </button>
+    </section>
+
+    <!-- Sezione elenco -->
+    <section class="card">
+      <h2>Elenco materie</h2>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Materia</th>
+            <th>Voto</th>
+            <th>Ore assenza</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="lista-materie"></tbody>
+      </table>
+
+      <div class="summary">
+        <span>Media voti: <strong id="media-voti">0.00</strong></span>
+        <span>Totale ore assenza: <strong id="totale-assenze">0</strong></span>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>Progetto Monica – versione base per Netlify</span>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
